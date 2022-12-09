@@ -10,6 +10,7 @@ export interface Movie {
     minmum:string;
   }
   export interface ResultsEntity {
+    name: string;
     adult: boolean;
     backdrop_path: string;
     genre_ids?: (number)[] | null;
