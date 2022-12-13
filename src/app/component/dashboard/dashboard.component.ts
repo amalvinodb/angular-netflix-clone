@@ -15,6 +15,8 @@ export class DashboardComponent implements OnInit {
   upcommingMovies!:Movie;
   trendingMovie!:Movie;
   originals!:Movie;
+  videolink!:string;
+  isVideo:boolean = false;
  
 
 
@@ -76,5 +78,10 @@ export class DashboardComponent implements OnInit {
       })
     }
     return movies;
+  }
+
+  clickOnPm(movie:any){
+    this.isVideo = true;
+    this.videolink = 'https://www.youtube.com/watch?v=eX2qFMC8cFo';
   }
 }

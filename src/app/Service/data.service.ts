@@ -27,7 +27,7 @@ export class DataService {
     return this.http.get<Movie>(this.url+'/movie/top_rated?api_key=50c77bd1d72501f49fbfd9ca366b0d4d')
   }
   getUpcommingMovies():Observable<Movie>{
-    return this.http.get<Movie>(this.url+'/movie/upcomming?api_key=50c77bd1d72501f49fbfd9ca366b0d4d')
+    return this.http.get<Movie>(this.url+'/movie/upcoming?api_key=50c77bd1d72501f49fbfd9ca366b0d4d')
   }
   gettrendingMovies():Observable<Movie>{
     return this.http.get<Movie>(this.url+'/trending/all/week?api_key=50c77bd1d72501f49fbfd9ca366b0d4d')
